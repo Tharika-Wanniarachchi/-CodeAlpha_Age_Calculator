@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* *******************home page section********************* */
+
+
+.home {
+    background-image: url("images/cover.png") !important;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'poppins';
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+
+}
+
+#indexPage {
+    margin-top: 30px;
+}
+
+.main{
+    font-size:50px;
+    font-weight: 600;
+    color: #5E4A93;
+    margin-left: 50px;
+}
+
+.main_img{
+    margin-left: 50px;
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%!important;
+   
+}
+
+.content p{
+    font-size:25px;
+    font-weight: 400;
+    color: #015D68;
+}
+
+.content button{
+    background: linear-gradient(to right, #5E4A93 ,#015D68 ,#00AFC8);
+    color: white;
+    padding: 10px 40px;
+    font-size:25px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 20px 0px 0px 80px;
+    border: 2px solid #5F5184;
+}
+.content i{
+    color: rgb(195, 194, 194);
+    margin-left: 10px;
+}
+
+/* *******************calculator section********************* */
+
+#calculatorPage{
+    justify-content: center;
+}
+.cal-back {
+    background: linear-gradient(to right, #FFFFFF,#baf3fc,#9becf8,#84e7f6 ,#2fdbf5,#34d5ee ,#05cae8,#02d7f8,#02c0dd,#00AFC8);
+    box-shadow: inset -15px 0 18px rgba(0, 0, 0, 0.5);     
+    padding: 70px 70px 70px 20px!important;
+    margin-top: 32px!important;
+    border-radius: 10px;
+}
+.cal-img{
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center!important;
+ 
+ }
+
+ .cal-img img{
+    text-align: center!important;
+ }
+.cal-lbl{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cal-back .input-section input {
+    padding: 10px;
+    width: 350px;
+    margin: 20px 0px 20px 70px;
+    border-radius: 5px;
+    border: 2px solid #5F5184;
+    font-weight: 400 !important;
+    background-color: #DDFBFF;
+}
+
+.cal-back .input-section button {
+    padding: 10px 25px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #9A031E;
+    background: linear-gradient(to right, #5E4A93 ,#015D68 ,#00AFC8);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 0px 145px 20px 145px;
+}
+
+.cal-back .output-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.cal-back .output-section .out-box {
+    background-color: #DDFBFF;
+    margin: 20px 35px 30px 0px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 2px solid #5F5184;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    padding: 20px 10px 35px 10px;
+   color: rgb(104, 104, 104);
+
+}
+
+.out-age{
+    color: #2d166e;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.back{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back-btn{
+    padding: 10px 25px;
+    width: 150px!important;
+    border-radius: 5px;
+    border: 1px solid #9A031E;
+    background: linear-gradient(to right, #5E4A93 ,#015D68 ,#c84600);
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin-left: auto!important;
+    
+}
+
+/* *******************Responsive media query********************* */
+@media(max-width:992px){
+    .main{
+        font-size:40px;
+        font-weight: 600;
+        color: #5E4A93;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+      
+    .main_img{
+        margin-left: auto; 
+        margin-right: auto;
+        display: block;
+        width: 50%;
+
+    }
+    .content p{
+        font-size:20px;
+        font-weight: 400;
+        color: #015D68;
+        margin-top: 30px;
+    }
+    
+    .content button{
+        background: linear-gradient(to right, #5E4A93 ,#015D68 ,#00AFC8);
+        color: white;
+        padding: 10px 40px;
+        font-size:20px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin: 30px 0px 0px 50px;
+        border: 2px solid #5F5184;
+    }
+}
+
+@media(max-width:767px){
+    .main{
+        font-size:40px;
+        font-weight: 600;
+        color: #5E4A93;
+        text-align: center;
+    }
+    
+    .main_img{
+        margin-left: auto; 
+        margin-right: auto;
+        display: block;
+        width: 50%;
+
+    }
+    .content p{
+        font-size:20px;
+        font-weight: 400;
+        color: #015D68;
+        margin-top: 0px;
+    }
+    .content button{
+        background: linear-gradient(to right, #5E4A93 ,#015D68 ,#00AFC8);
+        color: white;
+        padding: 10px 40px;
+        font-size:20px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin: 15px 0px 30px 200px;
+        border: 2px solid #5F5184;
+    }
+}
+
+@media(max-width:576px){
+    .content{
+        text-align: center;
+    }
+    .content p{
+        font-size:20px;
+        font-weight: 400;
+        color: #015D68;
+    }
+    .content button{
+        background: linear-gradient(to right, #5E4A93 ,#015D68 ,#00AFC8);
+        color: white;
+        padding: 10px 40px;
+        font-size:20px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin: 15px auto 30px; 
+        display: block;
+        border: 2px solid #5F5184;
+    }
+}
+
+
+@media(max-width:1350px) {
+    
+.cal-back .input-section input {
+    padding: 10px;
+    width: 300px;
+    margin: 20px 0px 20px 30px;
+}
+
+.cal-back .input-section button {
+    padding: 10px 25px;
+    width: 150px;
+    margin: 0px 145px 20px 115px;
+}
+.cal-back .output-section .out-box {
+    margin: 20px 35px 30px 0px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    padding: 20px 10px 35px 10px;
+
+}
+
+
+}
+@media(max-width:1040px) {
+    
+    .cal-back .input-section input {
+        width: 250px;
+        margin: 20px 0px 20px 30px;
+      
+    }
+    
+    .cal-back .input-section button {
+        padding: 10px 25px;
+        width: 150px;       
+        margin: 0px 145px 20px 80px;
+    }
+    
+}
+
+@media(max-width:850px) {
+    
+    .cal-back .input-section input {
+        width: 200px;
+        margin: 20px 0px 20px 30px;
+      
+    }
+    
+    .cal-back .input-section button {
+        padding: 10px 25px;
+        width: 200px;       
+        margin: 0px 145px 20px 30px;
+    }
+    
+}
+@media(max-width:767px) {
+    .cal-lbl{
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 30px 
+    }
+    .cal-img{
+        display: flex !important;
+        justify-content: center !important; 
+        align-items: center!important;
+     
+     }
+    
+     .cal-img img{
+        text-align: center!important;
+     }
+    .cal-back .input-section input {
+        padding: 10px;
+        width: 350px;
+        margin: 50px 0px 50px 0px!important;
+        display: block!important;
+        margin: auto!important;
+        padding: auto!important;
+
+    }
+    
+    .cal-back .input-section button {
+        padding: 10px 25px;
+        width: 200px;
+        display: block!important;
+        margin: 30px auto!important;
+        padding: auto!important;
+    }
+    .cal-back .output-section .out-box {
+        margin: 20px 35px 30px 0px;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        padding: 20px 10px 35px 10px;
+    
+    }
+
+    .cal-back .output-section .out-box {
+        margin: 10px 0px 30px 30px;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        padding: 20px 10px 35px 10px;    
+    }
+} 
+
+@media(max-width:535px) {
+    
+    .cal-back .input-section input {
+        width: 270px;
+        margin: 20px 0px 20px 30px;
+      
+    }
+    
+    .cal-back .input-section button {
+        padding: 10px 25px;
+        width: 200px;       
+        margin: 0px 145px 20px 30px;
+    }
+    
+}

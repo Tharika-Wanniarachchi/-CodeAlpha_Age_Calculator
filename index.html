@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/svg+xml">
+
+    <title>Age Calculator</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Macondo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body class="home">
+         <!-- Home  page section Start -->
+        <div class="container" id="indexPage">
+          <div class="row">
+               <!-- Left column with heading and image -->
+            <div class="col-md-6 col-sm-12">
+                <h1 class="mb-5 main">How Old Am I ?</h1>
+                <img src="images/age.png" alt="cal" width="70%" class="main_img">
+            </div>
+                <!-- Right column with content -->
+            <div class="col-md-6 col-sm-12 content">
+                <p>Age Calculator By Date of Birth</p>
+                <button id="goToCalculator">Go to Calculator <i class="fa-solid fa-circle-chevron-right"></i></button><br>
+            </div>
+          </div>
+        </div>
+        <!-- Home  page section end -->
+ 
+        <!-- Calculator page section start -->
+        <div class="container col-md-8 col-sm-12 " id="calculatorPage" style="display: none;">
+                <div class="row cal-back">
+                        <!-- Left column with calculator image -->
+                    <div class="col-md-6 col-sm-12 cal-img">
+                        <img src="images/cal.png" alt="" width="80%">
+                    </div>
+                        <!-- Right column with input and output sections -->
+                    <div class="col-md-6 col-sm-12">
+                         <!-- Input section -->
+                        <div class="input-section">
+                            <label for="inputDate" class="cal-lbl">Enter your Date of Birth</label>
+                            <div>
+                                <input type="date" name="inputDate" id="inputDate">
+                                <button id="calAgeBtn">Calculate</button>
+                            </div>
+                            <p class="cal-lbl">Your age is : </p>
+                        </div>
+                         <!-- Output section -->
+                        <div class="output-section">
+                            <div class="out-box">
+                                <span id="years" class="out-age">--</span>
+                                <p>Years</p>
+                            </div>
+                            <div class="out-box">
+                                <span id="months" class="out-age">--</span>
+                                <p>Months</p>
+                            </div>
+                            <div class="out-box">
+                                <span id="days" class="out-age">--</span>
+                                <p>Days</p>
+                            </div>
+                        </div> 
+                    </div>
+
+                     <!-- Button to go back to index page -->
+                    <div class="back text-right">
+                        <button class="back-btn" id="goBack">Back</button>
+                    </div>
+                </div>
+
+        </div>
+        <!-- Calculator page section end -->
+
+        <!-- Script for changing content -->
+    <script>
+        // Event listener for going to calculator page
+        document.getElementById("goToCalculator").addEventListener("click", function() {
+            document.getElementById("indexPage").style.display = "none";
+            document.getElementById("calculatorPage").style.display = "block";
+        });
+
+        // Event listener for going back to index page
+        document.getElementById("goBack").addEventListener("click", function() {
+            document.getElementById("calculatorPage").style.display = "none";
+            document.getElementById("indexPage").style.display = "block";
+        });
+    </script>
+
+
+    <!-- external Java script -->
+    <script src="script.js"></script>
+    
+    <!-- Java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+          
+      
+</body>
+</html>
