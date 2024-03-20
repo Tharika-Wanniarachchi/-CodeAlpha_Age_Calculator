@@ -86,11 +86,27 @@
         </div>
         <!-- Calculator page section end -->
 
-            <!-- external Java script -->
-          <script src="script.js"></script>
+        <!-- Script for changing content -->
+    <script>
+        // Event listener for going to calculator page
+        document.getElementById("goToCalculator").addEventListener("click", function() {
+            document.getElementById("indexPage").style.display = "none";
+            document.getElementById("calculatorPage").style.display = "block";
+        });
+
+        // Event listener for going back to index page
+        document.getElementById("goBack").addEventListener("click", function() {
+            document.getElementById("calculatorPage").style.display = "none";
+            document.getElementById("indexPage").style.display = "block";
+        });
+    </script>
+
+
+    <!-- external Java script -->
+    <script src="script.js"></script>
     
-          <!-- Java script -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
           
       
 </body>
