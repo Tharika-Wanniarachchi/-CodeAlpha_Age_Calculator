@@ -24,8 +24,68 @@
 
 
 </head>
-<body>
-  
+<body class="home">
+         <!-- Home  page section Start -->
+        <div class="container" id="indexPage">
+          <div class="row">
+               <!-- Left column with heading and image -->
+            <div class="col-md-6 col-sm-12">
+                <h1 class="mb-5 main">How Old Am I ?</h1>
+                <img src="images/age.png" alt="cal" width="70%" class="main_img">
+            </div>
+                <!-- Right column with content -->
+            <div class="col-md-6 col-sm-12 content">
+                <p>Age Calculator By Date of Birth</p>
+                <button id="goToCalculator">Go to Calculator <i class="fa-solid fa-circle-chevron-right"></i></button><br>
+            </div>
+          </div>
+        </div>
+        <!-- Home  page section end -->
+ 
+        <!-- Calculator page section start -->
+        <div class="container col-md-8 col-sm-12 " id="calculatorPage" style="display: none;">
+                <div class="row cal-back">
+                        <!-- Left column with calculator image -->
+                    <div class="col-md-6 col-sm-12 cal-img">
+                        <img src="images/cal.png" alt="" width="80%">
+                    </div>
+                        <!-- Right column with input and output sections -->
+                    <div class="col-md-6 col-sm-12">
+                         <!-- Input section -->
+                        <div class="input-section">
+                            <label for="inputDate" class="cal-lbl">Enter your Date of Birth</label>
+                            <div>
+                                <input type="date" name="inputDate" id="inputDate">
+                                <button id="calAgeBtn">Calculate</button>
+                            </div>
+                            <p class="cal-lbl">Your age is : </p>
+                        </div>
+                         <!-- Output section -->
+                        <div class="output-section">
+                            <div class="out-box">
+                                <span id="years" class="out-age">--</span>
+                                <p>Years</p>
+                            </div>
+                            <div class="out-box">
+                                <span id="months" class="out-age">--</span>
+                                <p>Months</p>
+                            </div>
+                            <div class="out-box">
+                                <span id="days" class="out-age">--</span>
+                                <p>Days</p>
+                            </div>
+                        </div> 
+                    </div>
+
+                     <!-- Button to go back to index page -->
+                    <div class="back text-right">
+                        <button class="back-btn" id="goBack">Back</button>
+                    </div>
+                </div>
+
+        </div>
+        <!-- Calculator page section end -->
+
             <!-- external Java script -->
           <script src="script.js"></script>
     
